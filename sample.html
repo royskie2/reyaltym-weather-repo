@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,6 +20,14 @@
     />
     <button onclick="fetchWeatherByLocation()">Get Weather</button>
     <button onclick="useCurrentLocation()">Use My Current Location</button>
+    
+    <p>Enter a destination for route planning:</p>
+    <input
+      type="text"
+      id="destinationInput"
+      placeholder="Enter destination (e.g., Manila, Philippines)"
+    />
+    <button onclick="calculateRoute()">Get Route</button>
 
     <div id="map"></div>
     <div class="weather-box">
@@ -32,7 +40,6 @@
         <p id="wind-speed"></p>
            </div>
       
-
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="script.js"></script>
   </body>
